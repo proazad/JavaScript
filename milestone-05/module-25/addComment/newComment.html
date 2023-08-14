@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #comment-area p {
+        border: 1px solid blue;
+        margin: 20px 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Comment Area</h1>
+
+      <section id="comment-area">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ab
+          temporibus fugit voluptate impedit similique reprehenderit deserunt
+          possimus vitae quaerat, omnis soluta fugiat animi quidem asperiores
+          error eveniet cum tempore, earum quam. Unde nemo pariatur accusamus
+          quidem id accusantium quae iste, vero fugit quaerat ab quibusdam
+          reprehenderit rem ipsa repellat!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ab
+          temporibus fugit voluptate impedit similique reprehenderit deserunt
+          possimus vitae quaerat, omnis soluta fugiat animi quidem asperiores
+          error eveniet cum tempore, earum quam. Unde nemo pariatur accusamus
+          quidem id accusantium quae iste, vero fugit quaerat ab quibusdam
+          reprehenderit rem ipsa repellat!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ab
+          temporibus fugit voluptate impedit similique reprehenderit deserunt
+          possimus vitae quaerat, omnis soluta fugiat animi quidem asperiores
+          error eveniet cum tempore, earum quam. Unde nemo pariatur accusamus
+          quidem id accusantium quae iste, vero fugit quaerat ab quibusdam
+          reprehenderit rem ipsa repellat!
+        </p>
+      </section>
+      <div>
+        <textarea name="comment" id="comment" cols="60" rows="20"></textarea>
+        <br /><br />
+        <button type="submit" id="post">Post Comment</button>
+      </div>
+    </main>
+    <script>
+      document.getElementById("post").addEventListener("click", function () {
+        const comment = document.getElementById("comment");
+        const newComment = comment.value;
+
+        const commentContainer = document.getElementById("comment-area");
+        const p = document.createElement("p");
+        p.innerText = newComment;
+        if (p.innerText !== "") {
+          commentContainer.appendChild(p);
+        }
+        comment.value = "";
+      });
+    </script>
+  </body>
+</html>

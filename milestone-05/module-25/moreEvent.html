@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Js Event</title>
+  </head>
+  <body>
+    <h1>JavaScript More Event</h1>
+    <button id="btn">Submit</button>
+    <input type="text" id="input" />
+    <script>
+      // document.getElementById("btn").addEventListener("click", function () {
+      //   console.log("Btn Clicked");
+      // });
+      // document.getElementById("btn").addEventListener("mouseenter", function () {
+      //   console.log("Btn Clicked");
+      // });
+      // document.getElementById("btn").addEventListener("mousemove", function () {
+      //   console.log("Btn Clicked");
+      // });
+      // document.getElementById("input").addEventListener("focus", function () {
+      //   console.log("Event Trigared inside the input field focus");
+      // });
+      // document.getElementById("input").addEventListener("blur", function () {
+      //   console.log("Event Trigared outside the input field blur");
+      // });
+      // document.getElementById("input").addEventListener("keydown", function () {
+      //   console.log(event.target.value);
+      // });
+      // document
+      //   .getElementById("input")
+      //   .addEventListener("keypress", function () {
+      //     console.log(event.target.value);
+      //   });
+      document.getElementById("input").addEventListener("keyup", function () {
+        console.log(event.target.value);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubble</title>
+  </head>
+  <body id="body">
+    <h1 id="heading">Event Bubble</h1>
+    <section id="ul-container">
+      <ul id="list">
+        <li id="item">Item 1</li>
+        <li id="item2">Item 2</li>
+        <li id="item">Item 3</li>
+        <li id="item">Item 4</li>
+        <li id="item">Item 5</li>
+      </ul>
+    </section>
+    <script>
+      //   document.getElementById("item2").addEventListener("click", function () {
+      //     console.log("Item 2 clicked");
+      //   });
+      document
+        .getElementById("item2")
+        .addEventListener("click", function (event) {
+          console.log("Item 2 clicked 1");
+          //   event.stopPropagation();
+          event.stopImmediatePropagation();
+        });
+      document
+        .getElementById("item2")
+        .addEventListener("click", function (event) {
+          console.log("Item 2 clicked 2");
+        });
+      document
+        .getElementById("item2")
+        .addEventListener("click", function (event) {
+          console.log("Item 2 clicked 3");
+        });
+      document
+        .getElementById("item2")
+        .addEventListener("click", function (event) {
+          console.log("Item 2 clicked 4");
+        });
+      document
+        .getElementById("item2")
+        .addEventListener("click", function (event) {
+          console.log("Item 2 clicked 5");
+        });
+      document.getElementById("list").addEventListener("click", function () {
+        console.log("UL Clicked");
+      });
+      document
+        .getElementById("ul-container")
+        .addEventListener("click", function () {
+          console.log("Ul Container Clickd");
+        });
+      document.getElementById("body").addEventListener("click", function () {
+        console.log("body Clicked");
+      });
+    </script>
+  </body>
+</html>
