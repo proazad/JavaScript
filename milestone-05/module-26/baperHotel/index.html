@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center my-7">
+        Welcome to <span class="text-violet-700">Baper Hotel Bank</span>!!!!
+      </h1>
+    </header>
+    <main>
+      <section
+        id="login"
+        class="w-1/2 mx-auto py-12 bg-blue-200 text-center rounded-xl"
+      >
+        <h2 class="text-2xl text-black font-bold">Please Login</h2>
+        <div id="form" class="text-center mt-4">
+          <span id="emailError" class="text-sm text-red-600"></span>
+
+          <input
+            type="email"
+            name="username"
+            id="username"
+            class="w-9/12 rounded-lg p-2 mb-4"
+          />
+          <span id="passwordError" class="block text-sm text-red-600"></span>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="w-9/12 rounded-lg p-2 mb-4"
+          />
+          <button
+            type="button"
+            id="submit"
+            class="w-1/4 rounded-lg p-2 mb-4 bg-amber-700 duration-500 hover:bg-blue-700 text-xl text-white"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/scirpt.js"></script>
+  </body>
+</html>

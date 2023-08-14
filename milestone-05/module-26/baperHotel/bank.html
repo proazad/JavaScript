@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center my-7">
+        Lets gets some <span class="text-violet-700">Moooney</span>!!!!
+      </h1>
+    </header>
+    <main>
+      <!-- Status  -->
+      <section class="grid grid-cols-3 w-9/12 mx-auto my-5 gap-5 text-white">
+        <div class="bg-green-400 p-5 rounded-lg">
+          <h1 class="text-3xl font-semibold">Deposit</h1>
+          <h2 class="text-4xl font-bold">
+            $<span id="deposit-amount">0</span>
+          </h2>
+        </div>
+
+        <div class="bg-violet-400 p-5 rounded-lg">
+          <h1 class="text-3xl font-semibold">Withdraw</h1>
+          <h2 class="text-4xl font-bold">
+            $<span id="withdraw-amount">0</span>
+          </h2>
+        </div>
+
+        <div class="bg-rose-700 p-5 rounded-lg">
+          <h1 class="text-3xl font-semibold">Balance</h1>
+          <h2 class="text-4xl font-bold">$<span id="balance">1230</span></h2>
+        </div>
+      </section>
+      <!-- Deposite and Withdraw  -->
+      <section class="grid grid-cols-2 w-9/12 mx-auto mt-40 gap-5">
+        <div class="bg-rose-800 p-5 rounded-lg">
+          <h1 class="text-2xl font-semibold mb-3 text-white">Please Deposit</h1>
+          <span id="depositError" class="block text-sm text-red-600"></span>
+          <input
+            type="text"
+            name="deposit"
+            id="deposit-field"
+            class="w-full rounded-lg p-2 mb-4 text-gray-600"
+            placeholder="$ amount you want to deposit"
+          />
+          <button
+            type="button"
+            id="deposit-btn"
+            class="w-1/2 rounded-lg p-2 mb-4 bg-sky-800 duration-500 hover:bg-yellow-700 text-xl text-white"
+          >
+            Deposit
+          </button>
+        </div>
+
+        <div class="bg-fuchsia-800 p-5 rounded-lg">
+          <h1 class="text-2xl font-semibold mb-3 text-white">
+            Please Withdraw
+          </h1>
+          <span id="withdrawError" class="block text-sm text-red-600"></span>
+          <input
+            type="text"
+            name="withdraw"
+            id="withdraw-field"
+            class="w-full rounded-lg p-2 mb-4 text-gray-600"
+            placeholder="$ amount you want to withdraw"
+          />
+          <button
+            type="button"
+            id="withdraw-btn"
+            class="w-1/2 rounded-lg p-2 mb-4 bg-amber-700 duration-500 hover:bg-blue-700 text-xl text-white"
+          >
+            Withdraw
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/bank.js"></script>
+  </body>
+</html>
