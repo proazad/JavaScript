@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center my-7">
+        Welcome to <span class="text-violet-700">Cupon Page</span>!!!!
+      </h1>
+    </header>
+    <main>
+      <section class="bg-blue-200 p-4 w-1/2 mx-auto">
+        <h1 class="text-3xl text-violet-900 mb-4">
+          Your Total Cost is $<span id="price" class="text-red-700">1000</span>
+        </h1>
+        <label for="cuponField" class="text-xl pr-2 font-semibold">Cupon</label>
+        <input type="text" id="cuponField" class="rounded-md p-1 mr-2" />
+        <button
+          class="bg-indigo-500 py-1 px-4 rounded-md text-white"
+          id="btn-cupon"
+        >
+          Apply Cupon
+        </button>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
