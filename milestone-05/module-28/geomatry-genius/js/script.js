@@ -31,3 +31,37 @@ function parallelogramArea() {
     }
     return;
 }
+
+// Rhombus Area Calculation 
+function rhombusArea() {
+    const d1 = getInputValue('rhombus-d1');
+    const d2 = getInputValue("rhombus-d2");
+    const area = 0.5 * d1 * d2;
+    if (d1 && d2) {
+        setElementText('rhombus-area', area);
+    }
+    return;
+}
+
+// Pentagon Area Calculation 
+function pentagonArea() {
+    const p = getInputValue('pentagon-p');
+    const b = getInputValue("pentagon-b");
+    const area = 0.5 * p * b;
+    if (p && b) {
+        setElementText('pentagon-area', area);
+    }
+    return;
+}
+
+// Ellipse Area Calculation 
+function ellipseArea() {
+    const ellipseLarger = getInputValue('ellipse-larger');
+    const ellipseSmaller = getInputValue("ellipse-smaller");
+    const areaLargeNumber = Math.PI * ellipseLarger * ellipseSmaller;
+    const area =  areaLargeNumber.toFixed(2);
+    if (ellipseLarger && ellipseSmaller) {
+        setElementText('ellipse-area', area);
+    }
+    return;
+}

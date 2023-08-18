@@ -33,7 +33,7 @@
           </figure>
           <div class="card-body text-center">
             <h2 class="text-2xl text-center">Triangle</h2>
-            <p class="text-xl">Area (A) = 0.5 X b X h</p>
+            <p class="text-xl">Area (A) = 0.5 x b x h</p>
             <p>
               <input
                 type="text"
@@ -96,15 +96,15 @@
             </div>
           </div>
         </div>
-        <!-- Parallelogram Card  -->
 
+        <!-- Parallelogram Card  -->
         <div class="card card-compact bg-base-100 shadow-xl">
           <figure>
             <img src="./images/parallelogram.png" alt="Parallelogram" />
           </figure>
           <div class="card-body text-center">
             <h2 class="text-2xl text-center">Parallelogram</h2>
-            <p class="text-xl">Area (A) = b X h</p>
+            <p class="text-xl">Area (A) = b x h</p>
             <p>
               <input
                 type="text"
@@ -130,6 +130,115 @@
                 onclick="parallelogramArea()"
                 class="btn btn-primary w-full"
               >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rhombus Card  -->
+        <div class="card card-compact bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/rhombus.png" alt="Rhombus" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-2xl text-center">Rhombus</h2>
+            <p class="text-xl">
+              Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+            </p>
+            <p>
+              <input
+                type="text"
+                placeholder="d1"
+                id="rhombus-d1"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span class="mx-2">cm</span>
+              <input
+                type="text"
+                id="rhombus-d2"
+                placeholder="d2"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span>cm</span>
+            </p>
+            <p class="text-xl">
+              Area: <span id="rhombus-area"></span>
+              <span>cm<sup>2</sup></span>
+            </p>
+            <div class="">
+              <button onclick="rhombusArea()" class="btn btn-primary w-full">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pentagon Card  -->
+        <div class="card card-compact bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/pentagon.png" alt="Pentagon" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-2xl text-center">Pentagon</h2>
+            <p class="text-xl">Area (A) = 0.5 x p x b</p>
+            <p>
+              <input
+                type="text"
+                placeholder="p"
+                id="pentagon-p"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span class="mx-2">cm</span>
+              <input
+                type="text"
+                id="pentagon-b"
+                placeholder="b"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span>cm</span>
+            </p>
+            <p class="text-xl">
+              Area: <span id="pentagon-area"></span>
+              <span>cm<sup>2</sup></span>
+            </p>
+            <div class="">
+              <button onclick="pentagonArea()" class="btn btn-primary w-full">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ellipse Card  -->
+        <div class="card card-compact bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/ellipse.png" alt="Ellipse" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-2xl text-center">Ellipse</h2>
+            <p class="text-xl">Area (A) = πab</p>
+            <p>
+              <input
+                type="text"
+                placeholder="larger"
+                id="ellipse-larger"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span class="mx-2">cm</span>
+              <input
+                type="text"
+                id="ellipse-smaller"
+                placeholder="smaller"
+                class="input input-bordered input-primary w-24 max-w-xs"
+              />
+              <span>cm</span>
+            </p>
+            <p class="text-xl">
+              Area: <span id="ellipse-area"></span>
+              <span>cm<sup>2</sup></span>
+            </p>
+            <div class="">
+              <button onclick="ellipseArea()" class="btn btn-primary w-full">
                 Calculate
               </button>
             </div>
