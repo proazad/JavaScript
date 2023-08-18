@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop Page</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="./images/bootstrap-logo.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top me-2"
+            />
+            Flower Shop
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Flower</a></li>
+                  <li><a class="dropdown-item" href="#">Cock Sheet</a></li>
+                  <li><a class="dropdown-item" href="#">Car Decoration</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Stage Decoration</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header End Here  -->
+    <main class="container my-4">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 10.png"
+                  class="card-img-top h-50"
+                  alt="Red Rose"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Red Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 90 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 6.png"
+                  class="card-img-top h-50"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pink Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 80 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 7.png"
+                  class="card-img-top h-50"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yellow Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 60 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 8.png"
+                  class="card-img-top h-50"
+                  alt="Green Rose"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Green Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 70 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 10.png"
+                  class="card-img-top h-50"
+                  alt="Red Rose"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Red Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 30 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="height: 400px">
+              <div class="card h-100">
+                <img
+                  src="./images/pngwing 10.png"
+                  class="card-img-top h-50"
+                  alt="Red Rose"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Red Rose</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+                <div
+                  class="card-footer d-flex justify-content-between align-items-center"
+                >
+                  <small class="text-dark">Price: 50 $</small>
+                  <button class="btn btn-sm btn-info" onclick="addToCart(this)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card px-2">
+            <h1>Shopping Cart</h1>
+            <div id="cartTable"></div>
+            <h5 class="text-primary">Total: <span id="total">0</span></h3>
+            <h6 class="text-success">Discount: <span id="discount-amount">0</span></h3>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Reedem Code" id="coupon-input" aria-describedby="coupon-btn">
+                <button class="btn btn-outline-success" type="button" onclick="discountCalculation(this)">Apply Coupon</button>
+            </div>
+            <h4>Grand Total: <span id="g-total" class="text-danger">0</span>$</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
