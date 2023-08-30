@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Data From API</title>
+    <style>
+      table {
+        width: 100%;
+      }
+      table,
+      td,
+      th {
+        border-collapse: collapse;
+        border: 1px solid #0c7900;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="" onclick="loadData()">Load Data</button>
+    <button id="" onclick="loadData2()">Load Users</button>
+    <br /><br /><br />
+    <!-- <ul id="user-list"></ul> -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>User Name</th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody id="user-list"></tbody>
+    </table>
+    <!-- scripts  -->
+    <script src="./js/app.js"></script>
+    <script src="./js/json.js"></script>
+  </body>
+</html>
