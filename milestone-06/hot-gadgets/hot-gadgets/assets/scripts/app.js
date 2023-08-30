@@ -2,7 +2,7 @@
  * 
  * Load All Data 
  */
-const phonesDataLoad = async (searchText, isShowAll) => {
+const phonesDataLoad = async (searchText='13', isShowAll) => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -222,4 +222,4 @@ const loadPhoneDetails = async (slug) => {
           </form>
     `;
 }
-phonesDataLoad('iphone');
+phonesDataLoad();
