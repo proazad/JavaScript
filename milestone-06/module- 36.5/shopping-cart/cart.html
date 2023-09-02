@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      #inputContainer {
+        width: calc(100% - 10%);
+        margin: 10px auto;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      input[type="text"] {
+        flex-grow: 1;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      input[type="button"] {
+        border-radius: 5px;
+        background-color: #ff4406;
+        color: #ffffff;
+        padding: 5px 10px;
+        border: none;
+      }
+      #cartContainer {
+        border: 1px solid #dddd;
+        padding: 40px;
+        margin-top: 35px;
+      }
+      #cartContainer li {
+        font-size: 25px;
+        color: #222222;
+      }
+      #cartContainer li span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="inputContainer">
+      <input type="text" placeholder="Product" id="product" />
+      <input type="text" placeholder="Quantity" id="quantity" />
+      <button type="button" onclick="addtoCart()">Add to Cart</button>
+    </div>
+    <ol id="cartContainer"></ol>
+    <script src="./cart.js"></script>
+  </body>
+</html>
